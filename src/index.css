@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CoverVerse Design System - Smart Civic Platform for African Cities
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 10%;
+
+    /* Civic Blue - Trust & Government */
+    --primary: 195 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 195 85% 35%;
+    --primary-dark: 195 85% 15%;
+
+    /* Warm Orange - African Energy & Action */
+    --secondary: 25 95% 55%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 25 95% 65%;
+
+    /* Solution Green - Growth & Progress */
+    --accent: 145 75% 45%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 145 75% 55%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 195 85% 25%;
+
+    /* Civic Gradients */
+    --gradient-civic: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+
+    /* Shadows with civic theme */
+    --shadow-civic: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-warm: 0 8px 25px -8px hsl(var(--secondary) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--accent) / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .neon {
+    --background: 260 100% 10%; /* deep purple/blue */
+    --foreground: 90 100% 70%; /* neon green */
+
+    --card: 260 100% 12%;
+    --card-foreground: 90 100% 70%;
+
+    --popover: 260 100% 14%;
+    --popover-foreground: 51 100% 60%; /* neon yellow */
+
+    --primary: 291 100% 50%; /* neon magenta */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 194 100% 60%; /* neon cyan */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 51 100% 60%; /* neon yellow */
+    --accent-foreground: 260 100% 10%;
+
+    --muted: 260 100% 20%;
+    --muted-foreground: 90 100% 70%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 291 100% 50%;
+    --input: 194 100% 60%;
+    --ring: 51 100% 60%;
+    --sidebar-background: 260 100% 12%;
+    --sidebar-foreground: 90 100% 70%;
+    --sidebar-primary: 291 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 51 100% 60%;
+    --sidebar-accent-foreground: 260 100% 10%;
+    --sidebar-border: 291 100% 50%;
+    --sidebar-ring: 51 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
