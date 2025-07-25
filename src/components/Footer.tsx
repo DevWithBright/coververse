@@ -67,10 +67,6 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>officialcoververse@gmail.com</span>
               </div>
-              <div className="flex items-center gap-3 text-background/70">
-                <Phone className="w-4 h-4" />
-                <span>+234 08068620343</span>
-              </div>
             </div>
 
             <div className="flex gap-4">

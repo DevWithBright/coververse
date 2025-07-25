@@ -174,10 +174,6 @@ const CallToAction = () => {
                 <span>officialcoververse@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5" />
-                <span>+234 08068620343</span>
-              </div>
-              <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />
                 <span>Lagos, Nigeria</span>
               </div>
