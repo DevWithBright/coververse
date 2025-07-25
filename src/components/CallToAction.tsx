@@ -171,11 +171,11 @@ const CallToAction = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-background/70">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5" />
-                <span>hello@coververse.africa</span>
+                <span>officialcoververse@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />
-                <span>+234 (0) 800 CIVIC</span>
+                <span>+234 08068620343</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />

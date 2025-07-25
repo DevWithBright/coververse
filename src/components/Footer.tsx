@@ -30,7 +30,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: "Twitter", icon: Twitter, href: "#" },
-    { name: "LinkedIn", icon: Linkedin, href: "#" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/cover-verse-b5b035377?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BCSVofHkISIOlZ%2BdwUdtRFQ%3D%3D " },
     { name: "GitHub", icon: Github, href: "https://github.com/DevWithBright/coververse#" },
   ];
 
@@ -69,7 +69,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3 text-background/70">
                 <Phone className="w-4 h-4" />
-                <span>+234 08068620343 </span>
+                <span>+234 08068620343</span>
               </div>
             </div>
 
